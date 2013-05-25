@@ -150,6 +150,13 @@ input[type="checkbox"]:disabled + label {
 
 .topcoat-checkbox-label--left:before,
 .topcoat-checkbox-label--right:after{
-    background-position: center;
+    background-position: left 0px;
+    background-size: 40px;
     background-image: url("../img/star.png");
 }
+
+input[type="checkbox"]:checked + .topcoat-checkbox-label--left:before,
+input[type="checkbox"]:checked + .topcoat-checkbox-label--right:after {
+  background-position: left -40px;
+}
+
