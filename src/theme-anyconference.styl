@@ -33,7 +33,7 @@
     line-height: 2rem
     font-size: 2rem
     font-family: 'League Gothic'
-    font-weight: 0
+    font-weight: 100
     padding: .07rem .7rem
     color: white
     background: var-color-status-next
@@ -91,7 +91,6 @@
     right: 0
 
 /* CHECKBOX */
-
 input[type="checkbox"] {
   display: none;
 }
@@ -151,7 +150,6 @@ input[type="checkbox"]:disabled + label {
 
 
 /* STAR */
-
 .topcoat-checkbox-label-star{
   padding: 0;
   margin: 0px;
@@ -173,5 +171,61 @@ input[type="checkbox"]:disabled + label {
 input[type="checkbox"]:checked + .topcoat-checkbox-label--left:before,
 input[type="checkbox"]:checked + .topcoat-checkbox-label--right:after {
   background-image: url("../img/staron.svg");
+}
+
+
+/* MENU */
+
+.anyconf-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #ffffff;
+}
+
+.anyconf-list{
+    margin: 2rem 0 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.anyconf-list__header{
+    position: relative;
+    width: 75%;
+    height: 3.3rem;
+    margin: 0;
+    color: white;
+    background: #cc6699;
+    font-weight: normal;
+    font-size: 2rem;
+    font-family: 'League Gothic';
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.anyconf-list__item{
+    width: 75%;
+    height: 2rem;
+    line-height: 2rem;
+    padding: .3rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background: #e9bcd2;
+}
+
+.anyconf-list-label{
+    display: inline-block;
+    padding: 0.6rem 1.3rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.topcoat-icon--arrow{
+    height: 3.3rem;
+    width: 50px;
+    border-right: 1px solid white;
+    vertical-align: top;
 }
 
